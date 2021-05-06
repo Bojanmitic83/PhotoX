@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&display=swap');
+:root {
+    --orange: #e24e2a;
+    --brown: #383838; /* rgb(56, 56, 56) */
+    --green: #538d6a;
+    --gray: #ececec;
+    --text: #555555;
+    --white: #fff;
+    --fontSize: 16px;
+    --transition: .4s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+/*****************
+nav
+******************/
+nav {
+    padding: 60px 0;
+}
+nav .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text);
+    padding: 10px;
+    border-right: 1px solid var(--gray);
+    
+}
+nav h2 {
+    float: left;
+    position: relative;
+    top: -25px;
+}
+nav span {
+    color: var(--text);
+    padding: 10px;
+    font-size: 1rem;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color:var(--text);
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: var(--gray);
+}
+nav ul li a:hover {
+    color: var(--orange);
+}
+nav ul li .active {
+    background: var(--orange);
+    color: var(--gray);
+}
+nav ul li .active:hover {
+    color: var(--gray);
+}
+/*****************
+header
+******************/
+header {
+    background-image: linear-gradient(rgba(56,56,56,.8),rgba(56,56,56,.8)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+/*****************
+about
+******************/
+.about {
+    padding: 80px 150px;
+    color: var(--gray);
+    background: var(--orange);
+}
+.about p {
+    line-height: 1.5;
+}
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*****************
+tehnologies
+******************/
+.tehnologies {
+    background: var(--brown);
+    text-align: center;
+}
+.tehnologies article {
+    width: 25%;
+    float: left;
+    padding: 50px;
+} 
+.tehnologies i {
+    color: var(--gray);
+    background: var(--orange);
+    padding: 30px;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-bottom: 20px;
+} 
+.tehnologies h2 {
+    color: var(--gray);
+} 
+.tehnologies p {
+    color:  var(--text);
+}
+.tehnologies h2::after {
+    display: block;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: var(--text);
+    margin: 20px auto;
+}
+/*****************
+cta
+******************/
+.cta {
+    text-align: center;
+    padding: 50px 0;
+}
+.cta h3 {
+    font-size: 2.2rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.cta p {
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+.cta button {
+    text-transform: uppercase;
+    padding:20px 30px;
+    color: var(--gray);
+    background: var(--green);
+    font-size: .8rem;
+    border: none;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+.cta button:hover {
+    background: var(--orange);
+}
+/*****************
+gallery
+******************/
+.gallery {
+    background: var(--brown);
+    text-align: center;
+    padding: 50px 0;
+}
+.gallery h3 {
+    font-size: 2.2rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery article {
+    width: 25%;
+    float: left;
+    padding: 30px;
+}
+/*****************
+footer
+******************/
+footer {
+    background: var(--green);
+    text-align: center;
+}
+footer p {
+    color: var(--gray);
+    padding: 50px 0;
+}
+/*****************
+responsive
+******************/
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    nav .logo {
+        font-size: 2rem;
+    }
+    nav ul li a {
+        padding: 5px 0px;
+        font-size: 1rem;
+    }
+    .about {
+        padding: 20px 20px;
+    }
+    .tehnologies article {
+        width: 100%;
+    }
+    .gallery article {
+        width: 100%
+    }
+}
+
